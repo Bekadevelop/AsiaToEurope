@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AsiaToEurope</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Cinzel:wght@500;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #f4f0ea;
+
+            display: flex;
+            flex-direction: column;
+
+            min-height: 100vh;
+        }
+
+        header{
+            width: 100%;
+            background-color: #1b120c;
+            border-bottom: 1px solid #5b3b1f;
+        }
+
+        .navbar{
+            width: 90%;
+            margin: auto;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 18px 0;
+        }
+
+        .logo{
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo img{
+            width: 45px;
+            height: 45px;
+        }
+
+        .logo h1{
+            color: #d6a24a;
+            font-size: 42px;
+            font-family: 'Cinzel', serif;
+        }
+
+        .menu a{
+            color: white;
+            text-decoration: none;
+            margin-left: 35px;
+            font-size: 18px;
+
+            transition: 0.3s;
+        }
+
+        .menu a:hover{
+            color: #d6a24a;
+        }
+
+        .main{
+            width: 100%;
+            height: 520px;
+
+            background-image:
+            linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+            url("./img/main_photo.png");
+
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            align-items: center;
+        }
+
+        .main-text{
+            margin-left: 90px;
+            color: white;
+        }
+
+        .main-text h2{
+            font-size: 90px;
+            margin-bottom: 20px;
+            font-family: 'Cinzel', serif;
+        }
+
+        .line{
+            width: 250px;
+            height: 3px;
+            background-color: #d6a24a;
+            margin-bottom: 25px;
+        }
+
+        .main-text p{
+            font-size: 40px;
+            line-height: 60px;
+            color: #f1c16b;
+        }
+
+        .foods{
+            width: 90%;
+            margin: 40px auto;
+
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .card-link{
+            width: 32%;
+            text-decoration: none;
+            color: black;
+        }
+
+        .card{
+            background-color: #f8f4ee;
+            height: 350px;
+            width: 430px;
+            border-radius: 12px;
+            border: 1px solid #d9cfc3;
+
+            padding: 18px;
+
+            box-shadow: 0px 0px 8px rgba(0,0,0,0.1);
+
+            transition: 0.3s;
+        }
+
+        .card:hover{
+            transform: scale(1.03);
+        }
+
+        .card-top{
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .flag{
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .card-top h3{
+            font-size: 28px;
+            color: #5a2d17;
+        }
+
+        .food-content{
+            display: flex;
+            gap: 15px;
+        }
+
+        .food-content img{
+            width: 200px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .food-text h4{
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+
+        .food-text p{
+            font-size: 15px;
+            color: #555;
+            margin-bottom: 15px;
+            line-height: 24px;
+        }
+
+        footer{
+            background-color: #1b120c;
+            color: white;
+
+            padding: 35px 0;
+
+            margin-top: auto;
+        }
+
+        .footer-container{
+            width: 90%;
+            margin: auto;
+
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        .footer-box h4{
+            color: #d6a24a;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
+        .footer-box p{
+            line-height: 28px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="navbar">
+
+            <div class="logo">
+                <img src="./img/main_logo.png">
+                <h1>AsiaToEurope</h1>
+            </div>
+
+             <div class="menu">
+            <a href="index.html">메인</a>
+            <a href="korea.html">한국 음식</a>
+            <a href="kyrgyzstan.html">키르기스스탄 음식</a>
+            <a href="turkey.html">터키 음식</a>
+            <a href="restaurant.html">레스토랑 및 위치</a>
+            <a href="reservation.html">예약하기</a>
+        </div>
+
+        </div>
+
+    </header>
+
+    <!-- MAIN -->
+
+    <section class="main">
+
+        <div class="main-text">
+
+            <h2>AsiaToEurope</h2>
+
+            <div class="line"></div>
+
+            <p>
+                한국 · 키르기스스탄 · 터키 <br>
+                음식을 한 곳에서
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- FOOD SECTION -->
+
+    <section class="foods">
+
+        <!-- KOREA -->
+
+        <a href="korea.html" class="card-link">
+
+            <div class="card">
+
+                <div class="card-top">
+                    <img class="flag" src="./img/korea.png">
+                    <h3>한국 음식 소개</h3>
+                </div>
+
+                <div class="food-content">
+
+                    <img src="./img/bibimpab.png">
+
+                    <div class="food-text">
+
+                        <h4>비빔밥</h4>
+
+                        <p>
+                            다양한 나물과 고기를 넣어 비비는
+                            한국의 대표 건강 음식입니다.
+                        </p>
+
+                        <h4>김치찌개</h4>
+
+                        <p>
+                            신선한 김치와 돼지고기를 넣어 만든
+                            한국 전통 찌개입니다.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </a>
+
+        <!-- KYRGYZSTAN -->
+
+        <a href="kyrgyzstan.html" class="card-link">
+
+            <div class="card">
+
+                <div class="card-top">
+                    <img class="flag" src="./img/kyrgyzstan.png">
+                    <h3>키르기스스탄 음식 소개</h3>
+                </div>
+
+                <div class="food-content">
+
+                    <img src="./img/plov.png">
+
+                    <div class="food-text">
+
+                        <h4>플로프</h4>
+
+                        <p>
+                            양고기와 당근, 쌀로 만든 
+                            키르기스스탄 대표 음식입니다.
+                        </p>
+
+                        <h4>만티</h4>
+
+                        <p>
+                            고기와 양파를 넣은 전통 만두로
+                            부드럽고 담백합니다.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </a>
+
+        <!-- TURKEY -->
+
+        <a href="turkey.html" class="card-link">
+
+            <div class="card">
+
+                <div class="card-top">
+                    <img class="flag" src="./img/turkey.png">
+                    <h3>터키 음식 소개</h3>
+                </div>
+
+                <div class="food-content">
+
+                    <img src="./img/kebab.png">
+
+                    <div class="food-text">
+
+                        <h4>케밥</h4>
+
+                        <p>
+                            숯불에 구워 만든
+                            터키의 대표 고기 요리입니다.
+                        </p>
+
+                        <h4>피데</h4>
+
+                        <p>
+                            다양한 토핑을 올린
+                            터키식 전통 피자입니다.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </a>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-box">
+
+                <h4>주소</h4>
+
+                <p>
+                    서울특별시 강남구 테헤란로 123 <br>
+                    AsiaToEurope 빌딩 1층
+                </p>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h4>전화번호</h4>
+
+                <p>
+                    02-1234-5678
+                </p>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h4>이메일</h4>
+
+                <p>
+                    info@asiatoeurope.com
+                </p>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h4>영업시간</h4>
+
+                <p>
+                    월요일 ~ 일요일 <br>
+                    11:00 ~ 22:00
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

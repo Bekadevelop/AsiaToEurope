@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>터키 음식</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Cinzel:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #f4f0ea;
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh;
+}
+
+header{
+    background-color: #1b120c;
+    border-bottom: 1px solid #5b3b1f;
+}
+
+.navbar{
+    width: 90%;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 0;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img{
+    width: 45px;
+}
+
+.logo h1{
+    color: #d6a24a;
+    font-size: 38px;
+    font-family: 'Cinzel', serif;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+.menu a:hover{
+    color: #d6a24a;
+}
+
+.main{
+    height: 500px;
+
+    background-image:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("images/background.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+}
+
+.main-text{
+    margin-left: 80px;
+    color: white;
+}
+
+.main-text h2{
+    font-size: 85px;
+    font-family: 'Cinzel', serif;
+}
+
+.line{
+    width: 250px;
+    height: 3px;
+    background-color: #d6a24a;
+
+    margin: 20px 0;
+}
+
+.main-text p{
+    font-size: 38px;
+    color: #f1c16b;
+}
+
+.foods{
+    width: 90%;
+    margin: 40px auto;
+
+    display: flex;
+    gap: 20px;
+}
+
+.card-link{
+    text-decoration: none;
+    color: black;
+}
+
+.card{
+    background-color: #f8f4ee;
+
+    border-radius: 12px;
+    border: 1px solid #d9cfc3;
+
+    padding: 15px;
+
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.03);
+}
+
+.card-top{
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 15px;
+}
+
+.flag{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.food-content{
+    display: flex;
+    gap: 12px;
+}
+
+.food-content img{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.food-text h4{
+    margin-bottom: 10px;
+}
+
+.food-text p{
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.page-title{
+    text-align: center;
+    margin-top: 50px;
+    color: #5a2d17;
+}
+
+.page-foods{
+    width: 85%;
+    margin: 50px auto;
+}
+
+.food-box{
+    display: flex;
+    gap: 30px;
+
+    background-color: white;
+
+    padding: 25px;
+    margin-bottom: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.1);
+}
+
+.food-box img{
+    width: 320px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.food-info h2{
+    margin-bottom: 15px;
+    color: #5a2d17;
+}
+
+.food-info p{
+    line-height: 30px;
+    color: #555;
+}
+
+.restaurant-box{
+    width: 85%;
+    margin: 50px auto;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+}
+
+.restaurant-box img{
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+footer{
+    background-color: #1b120c;
+    color: white;
+
+    padding: 30px 0;
+
+    margin-top: auto;
+}
+
+.footer-container{
+    width: 90%;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-box h4{
+    color: #d6a24a;
+    margin-bottom: 10px;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+    <div class="navbar">
+        <div class="logo">
+            <img src="img/main_logo.png">
+            <h1>AsiaToEurope</h1>
+        </div>
+
+         <div class="menu">
+            <a href="index.html">메인</a>
+            <a href="korea.html">한국 음식</a>
+            <a href="kyrgyzstan.html">키르기스스탄 음식</a>
+            <a href="turkey.html">터키 음식</a>
+            <a href="restaurant.html">레스토랑 및 위치</a>
+            <a href="reservation.html">예약하기</a>
+        </div>
+    </div>
+</header>
+
+<h1 class="page-title">터키 음식 소개</h1>
+
+<section class="page-foods">
+
+    <div class="food-box">
+        <img src="img/kebab.png">
+
+        <div class="food-info">
+            <h2>케밥</h2>
+            <p>
+                케밥은 숯불에 고기를 구워 만드는 터키 대표 음식입니다.
+                향신료와 함께 먹으면 더 맛있습니다.
+            </p>
+        </div>
+    </div>
+
+    <div class="food-box">
+        <img src="img/pide.jpg">
+
+        <div class="food-info">
+            <h2>피데</h2>
+            <p>
+                피데는 다양한 토핑을 넣어 만드는 터키식 전통 피자입니다.
+                바삭한 빵과 치즈가 특징입니다.
+            </p>
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    <div class="footer-container">
+
+        <div class="footer-box">
+            <h4>주소</h4>
+            <p>서울특별시 강남구 테헤란로 123</p>
+        </div>
+
+        <div class="footer-box">
+            <h4>전화번호</h4>
+            <p>02-1234-5678</p>
+        </div>
+
+        <div class="footer-box">
+            <h4>이메일</h4>
+            <p>info@asiatoeurope.com</p>
+        </div>
+
+    </div>
+</footer>
+
+</body>
+</html>
